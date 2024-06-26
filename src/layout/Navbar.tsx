@@ -1,4 +1,4 @@
-import { ReactElement, useState } from "react";
+import { ReactElement, useEffect, useState } from "react";
 import { cn } from "../utils/functions";
 import { IoChevronDown, IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
@@ -45,14 +45,31 @@ const NavbarLinks: NavLink[] = [
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  const handleScroll = () => {
+    const navHeight = document.querySelector("#navbar") as HTMLElement;
+    window.scrollY > navHeight.offsetHeight ? setIsScrolled(true) : setIsScrolled(false);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <nav>
-      <div className='w-screen flex items-center justify-between py-8 px-4 sm:px-[3rem] xl:px-[5rem] fixed top-0 z-50'>
+    <nav id='navbar'>
+      <div
+        className={cn(
+          "w-screen flex items-center justify-between py-8 px-4 sm:px-[3rem] xl:px-[5rem] fixed top-0 z-50 duration-500",
+          isScrolled && "bg-white shadow-[0_0_30px_rgba(0,0,0,0.10)]"
+        )}>
         <div className='flex items-center justify-between gap-1'>
           {/* logo */}
           <img src='/images/logo.png' alt='QuickStart Logo' className='w-7 xsm:w-9' />

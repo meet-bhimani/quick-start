@@ -3,7 +3,8 @@ QUICK START Project planning
 Sections and planning:
 
 navbar - done
-landing page
+landing page - done
+
 featured services
 about
 clients (companies)
@@ -20,7 +21,9 @@ footer
 
 
 todo:
-	background for navbar when scrolled
+	background for navbar when scrolled - done
+	
+	active state for navlinks and navigation within different section
 	refactor navbar code for navlinks
 	check for font family and padding and margins ( responsiveness )
 	handle watch video on landing page

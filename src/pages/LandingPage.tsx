@@ -22,7 +22,8 @@ function LandingPage() {
             variant='primary'
             size='md'
             className=' bg-transparent text-black flex items-center justify-center gap-2'>
-            <FaRegCirclePlay className='text-3xl text-primary' /> <span className='font-bold'>Watch Video </span>
+            <FaRegCirclePlay className='text-3xl text-primary' />
+            <span className='font-bold hover:text-primary duration-300'>Watch Video </span>
           </Button>
         </div>
       </div>
