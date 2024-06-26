@@ -14,6 +14,12 @@ export default {
         heading: "#3d4348",
         default: "#3e5055",
       },
+      boxShadow: {
+        custom: "0px 0px 30px rgba(0, 0, 0, 0.15)",
+      },
+      screens: {
+        xsm: "420px",
+      },
     },
   },
   plugins: [],

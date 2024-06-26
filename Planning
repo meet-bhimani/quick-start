@@ -1,0 +1,30 @@
+QUICK START Project planning
+
+Sections and planning:
+
+navbar - done
+landing page
+featured services
+about
+clients (companies)
+features
+features-details
+services
+more-features
+pricing
+faq
+testimonial
+contact
+footer
+
+
+
+todo:
+	background for navbar when scrolled
+	refactor navbar code for navlinks
+	check for font family and padding and margins ( responsiveness )
+	handle watch video on landing page
+	animations
+	
+Practices:
+	give section and id tag for every unique sections
