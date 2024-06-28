@@ -44,10 +44,17 @@ const FeaturedServicesData: ServiceData[] = [
 function FeaturedServices() {
   return (
     <>
-      <section id='featured-services' className='bg-secondary bg-opacity-30 mt-12 px-4 sm:px-16 py-14'>
+      <section id='featured-services-section' className='bg-secondary bg-opacity-30 mt-12 px-4 sm:px-16 py-14'>
         <div className='flex flex-col xl:flex-row mx-auto justify-center xl:justify-between items-center gap-10'>
           {FeaturedServicesData.map((service) => {
-            return <GenerateFeatureCard icon={service.icon} title={service.title} description={service.description} />;
+            return (
+              <GenerateFeatureCard
+                key={service.title}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+              />
+            );
           })}
         </div>
       </section>
