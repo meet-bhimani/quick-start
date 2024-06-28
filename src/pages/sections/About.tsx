@@ -22,7 +22,7 @@ function About() {
     <>
       <section
         id='about-section'
-        className='py-14 px-4 sm:px-10 md:px-32 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-6'>
+        className='py-14 px-4 min-h-[600px] sm:px-10 md:px-32 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-6'>
         <div>
           <h2 className='uppercase text-default'>Who we are</h2>
           <h1 className='font-nunito mt-4 text-3xl text-heading font-bold tracking-wider leading-10'>
