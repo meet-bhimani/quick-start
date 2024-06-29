@@ -16,7 +16,7 @@ const GenerateFeatureCard = ({ icon, title, description }: ServiceData) => {
         </div>
       </div>
       <div>
-        <h2 className='text-heading font-bold'>{title}</h2>
+        <h2 className='text-heading font-bold font-nunito text-lg'>{title}</h2>
         <p className='text-default text-sm mt-2'>{description}</p>
       </div>
     </div>
