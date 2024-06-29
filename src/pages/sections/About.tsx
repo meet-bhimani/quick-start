@@ -41,7 +41,7 @@ function About() {
             Read More <GoArrowRight />
           </Button>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-6 max-h-[400px]'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-6 lg:max-h-[400px]'>
           <div>
             <img src='/images/about-company-1.jpg' alt='about image 1' className='rounded-md h-full' />
           </div>
