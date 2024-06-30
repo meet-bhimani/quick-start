@@ -73,7 +73,7 @@ function Features() {
   const [activeFeatureId, setActiveFeatureId] = useState(1);
 
   return (
-    <section id='features-section' className='py-14 px-2 sm:px-10 md:px-20'>
+    <section id='features-section' className='py-14 px-4 sm:px-10 md:px-20'>
       <SectionTitle
         title='Features'
         subTitle='Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit'
