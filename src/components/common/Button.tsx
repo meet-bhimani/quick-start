@@ -4,7 +4,7 @@ import { cn } from "../../utils/functions";
 type ButtonProps = {
   children: React.ReactNode;
   className?: string;
-  variant?: "primary" | "secondary" | "disabled";
+  variant?: "primary" | "secondary" | "disabled" | "outlined";
   size?: "sm" | "md" | "lg";
   rounded?: boolean;
   type?: "button" | "reset" | "submit";
@@ -23,6 +23,8 @@ const Button: React.FC<ButtonProps> = ({
     primary: "bg-primary text-white hover:opacity-85 transition",
     secondary: "bg-secondary text-heading hover:opacity-85 transition",
     disabled: "bg-neutral-300 text-neutral-100 cursor-not-allowed transition",
+    outlined:
+      "bg-transparent text-black border hover:bg-primary hover:border-primary hover:text-white border-black transition duration-500",
   };
 
   const sizes = {
