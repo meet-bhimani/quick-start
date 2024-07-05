@@ -1,8 +1,9 @@
-import { ReactElement, useEffect, useState } from "react";
+import { ReactElement, useState } from "react";
 import { cn } from "../utils/functions";
 import { IoChevronDown, IoClose } from "react-icons/io5";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from "../components/common/Button";
+import useScroll from "../hooks/useScroll";
 
 type NavLink = {
   name: string;
@@ -45,19 +46,7 @@ const NavbarLinks: NavLink[] = [
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-
-  const handleScroll = () => {
-    const navHeight = document.querySelector("#navbar") as HTMLElement;
-    window.scrollY > navHeight.offsetHeight ? setIsScrolled(true) : setIsScrolled(false);
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const isScrolled = useScroll();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
