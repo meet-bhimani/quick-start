@@ -3,6 +3,7 @@ import Navbar from "./layout/Navbar";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/sections/About";
 import Companies from "./pages/sections/Companies";
+import Faqs from "./pages/sections/Faqs";
 import FeatureDetails from "./pages/sections/FeatureDetails";
 import FeaturedServices from "./pages/sections/FeaturedServices";
 import Features from "./pages/sections/Features";
@@ -23,6 +24,7 @@ function App() {
       <Services />
       <MoreFeatures />
       <Pricing />
+      <Faqs />
     </>
   );
 }
