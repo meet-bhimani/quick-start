@@ -91,5 +91,51 @@
       "subject": "test ",
       "message": "testing for onSuccess side effect in muation"
     }
+  ],
+  "newsletter": [
+    {
+      "id": "1",
+      "email": "test@test.com"
+    },
+    {
+      "id": "a071",
+      "email": "test@test.com"
+    },
+    {
+      "id": "f228",
+      "email": "meet@test.com"
+    },
+    {
+      "id": "bd4c",
+      "email": "test@test.com"
+    },
+    {
+      "id": "1051",
+      "email": "meet@test.com"
+    },
+    {
+      "id": "4e5e",
+      "email": "meet@test.com"
+    },
+    {
+      "id": "74e5",
+      "email": "bhi@tes.co"
+    },
+    {
+      "id": "f8cf",
+      "email": "final@test.com"
+    },
+    {
+      "id": "4137",
+      "email": "test@test.com"
+    },
+    {
+      "id": "099b",
+      "email": "final@test.co"
+    },
+    {
+      "id": "a7cf",
+      "email": "test@test.com"
+    }
   ]
 }

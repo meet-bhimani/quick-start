@@ -9,6 +9,7 @@ import Faqs from "./pages/sections/Faqs";
 import FeatureDetails from "./pages/sections/FeatureDetails";
 import FeaturedServices from "./pages/sections/FeaturedServices";
 import Features from "./pages/sections/Features";
+import Footer from "./pages/sections/Footer";
 import MoreFeatures from "./pages/sections/MoreFeatures";
 import Pricing from "./pages/sections/Pricing";
 import Services from "./pages/sections/Services";
@@ -29,6 +30,7 @@ function App() {
       <Faqs />
       <Contact />
       <ScrollToTopButton />
+      <Footer />
     </>
   );
 }
