@@ -4,6 +4,7 @@ import Navbar from "./layout/Navbar";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/sections/About";
 import Companies from "./pages/sections/Companies";
+import Contact from "./pages/sections/Contact";
 import Faqs from "./pages/sections/Faqs";
 import FeatureDetails from "./pages/sections/FeatureDetails";
 import FeaturedServices from "./pages/sections/FeaturedServices";
@@ -26,6 +27,7 @@ function App() {
       <MoreFeatures />
       <Pricing />
       <Faqs />
+      <Contact />
       <ScrollToTopButton />
     </>
   );
