@@ -62,7 +62,7 @@ function Navbar() {
         <div className='flex items-center justify-between gap-1'>
           {/* logo */}
           <img src='/images/logo.png' alt='QuickStart Logo' className='w-7 xsm:w-9' />
-          <span className='text-2xl xsm:text-3xl font-bold font-nunito text-heading'>QuickStart</span>
+          <h1 className='text-2xl xsm:text-3xl font-bold font-nunito text-heading'>QuickStart</h1>
         </div>
         <div className='flex items-center justify-between gap-5 xl:gap-10'>
           {/* navlinks  */}

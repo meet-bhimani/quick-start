@@ -8,7 +8,7 @@ import { ClipLoader } from "react-spinners";
 
 const schema = z.object({
   name: z.string().min(1, "Name is required"),
-  email: z.string().email("Invalid email address").min(1, "Email is required"),
+  email: z.string().min(1, "Email is required").email("Invalid email address"),
   subject: z.string().min(1, "Subject is required"),
   message: z.string().min(1, "Message is required"),
 });
@@ -37,7 +37,7 @@ const ContactForm = () => {
         body: JSON.stringify(data),
       });
       if (!response.ok) {
-        throw new Error("Network response was not ok");
+        throw new Error("Network error occurred");
       }
       reset();
       return response.json();
