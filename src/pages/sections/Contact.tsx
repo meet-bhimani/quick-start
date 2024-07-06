@@ -1,5 +1,6 @@
 import { BsEnvelope, BsGeoAlt, BsTelephone } from "react-icons/bs";
 import SectionTitle from "../../components/common/SectionTitle";
+import ContactForm from "../../components/ContactForm";
 
 const generateContactCard = ({ icon, label, value }: { icon: React.ReactElement; label: string; value: string }) => {
   return (
@@ -22,7 +23,7 @@ function Contact() {
       />
       <div className='flex flex-col gap-6 mt-14'>
         {/* first row - address , contact , email  */}
-        <div className='flex gap-6'>
+        <div className='flex flex-col lg:flex-row gap-6'>
           {/* address  */}
           <div className='basis-1/2'>
             {generateContactCard({
@@ -32,7 +33,7 @@ function Contact() {
             })}
           </div>
           {/* contact and email */}
-          <div className='flex basis-1/2 gap-6'>
+          <div className='flex flex-col md:flex-row basis-1/2 gap-6'>
             <div className='basis-1/2'>
               {generateContactCard({ icon: <BsTelephone />, label: "Call Us", value: "+1 5589 55488 55" })}
             </div>
@@ -42,7 +43,7 @@ function Contact() {
           </div>
         </div>
         {/* second row - map and contact form  */}
-        <div className='flex gap-6'>
+        <div className='flex flex-col lg:flex-row gap-6'>
           {/* map  */}
           <div className='basis-1/2'>
             <iframe
@@ -54,7 +55,9 @@ function Contact() {
               loading='lazy'></iframe>
           </div>
           {/* contact form  */}
-          <div className='basis-1/2'></div>
+          <div className='basis-1/2'>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>
