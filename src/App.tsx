@@ -1,4 +1,5 @@
 import "./App.css";
+import ScrollToTopButton from "./components/ScrollToTopButton";
 import Navbar from "./layout/Navbar";
 import LandingPage from "./pages/LandingPage";
 import About from "./pages/sections/About";
@@ -27,6 +28,7 @@ function App() {
       <Pricing />
       <Faqs />
       <Contact />
+      <ScrollToTopButton />
     </>
   );
 }
