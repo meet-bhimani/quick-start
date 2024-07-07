@@ -9,13 +9,13 @@ function LandingPage() {
         <div className='absolute top-0 left-0 w-full h-full bg-white opacity-85 -z-10'></div>
       </div>
       <div className='w-full px-2 pt-40 flex flex-col items-center justify-center'>
-        <h1 className='text-heading text-center text-3xl sm:text-5xl font-bold font-nunito'>
+        <h1 className='text-heading text-center text-3xl sm:text-5xl font-bold font-nunito' data-aos='fade-up'>
           Welcome to <span className='text-primary'>QuickStart</span>
         </h1>
-        <h3 className='text-gray-500 text-base text-center sm:text-xl mt-4'>
+        <h3 className='text-gray-500 text-base text-center sm:text-xl mt-4' data-aos='fade-up' data-aos-delay='100'>
           Quickly start your project now and set the stage for success
         </h3>
-        <div className='flex mt-8 gap-2'>
+        <div className='flex mt-8 gap-2' data-aos='fade-up' data-aos-delay='200'>
           <Button rounded variant='primary' size='md' className='px-8 py-0 sm:py-1 font-nunito'>
             Get Started
           </Button>
@@ -30,7 +30,7 @@ function LandingPage() {
         </div>
       </div>
       <div className='w-[min(90%,600px)] mx-auto'>
-        <img src='/images/hero-services-img.webp' alt='hero-section-image' />
+        <img src='/images/hero-services-img.webp' alt='hero-section-image' data-aos='zoom-out' data-aos-delay='300' />
       </div>
     </section>
   );

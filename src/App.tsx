@@ -1,4 +1,7 @@
 import "./App.css";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Navbar from "./layout/Navbar";
 import LandingPage from "./pages/LandingPage";
@@ -18,6 +21,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      startEvent: "DOMContentLoaded",
+      duration: 600,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <Navbar />

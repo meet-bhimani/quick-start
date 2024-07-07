@@ -88,6 +88,7 @@ function Testimonials() {
     centerMode: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1200,
@@ -107,7 +108,7 @@ function Testimonials() {
         title='Testimonials'
         subTitle='Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit'
       />
-      <div className='slider-container mt-10 py-14'>
+      <div className='slider-container mt-10 py-14' data-aos='fade-up' data-aos-delay='100'>
         <Slider {...settings}>
           {TestimonialsData.map(({ id, name, avatar, description, designation, starCount }: Testimonial) => {
             return (

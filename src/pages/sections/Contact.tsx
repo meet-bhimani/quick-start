@@ -21,7 +21,7 @@ function Contact() {
         title='Contact'
         subTitle='Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit'
       />
-      <div className='flex flex-col gap-6 mt-14'>
+      <div className='flex flex-col gap-6 mt-14' data-aos='fade-up' data-aos-delay='100'>
         {/* first row - address , contact , email  */}
         <div className='flex flex-col lg:flex-row gap-6'>
           {/* address  */}

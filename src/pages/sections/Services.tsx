@@ -76,7 +76,9 @@ const GenerateServiceCard = ({ id, icon, title, description, iconColor }: Servic
       key={id}
       className={cn(
         "flex gap-4 group/service-card hover:shadow-custom rounded-lg w-full cursor-pointer p-8 bg-white duration-500"
-      )}>
+      )}
+      data-aos='fade-up'
+      data-aos-delay={id * 100}>
       <div>
         <div
           className='rounded-lg border size-[72px] flex items-center justify-center text-[32px] bg-opacity-20'

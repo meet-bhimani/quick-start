@@ -51,7 +51,10 @@ function MoreFeatures() {
   return (
     <section id='feature-details-section' className='sm:px-4 md:px-20 my-14 flex flex-col'>
       <div className='flex justify-between flex-col lg:flex-row'>
-        <div className='basis-full px-4 sm:px-0 lg:basis-1/2 order-2 mt-6 lg:mt-0 lg:py-6 lg:pl-6'>
+        <div
+          className='basis-full px-4 sm:px-0 lg:basis-1/2 order-2 mt-6 lg:mt-0 lg:py-6 lg:pl-6'
+          data-aos='fade-up'
+          data-aos-delay='100'>
           <h1 className='text-heading font-nunito text-[28px] font-semibold'>
             Enim quis est voluptatibus aliquid consequatur
           </h1>
@@ -73,7 +76,10 @@ function MoreFeatures() {
             })}
           </div>
         </div>
-        <div className='basis-full lg:basis-[45%] order-1 lg:order-3 lg:max-h-[400px]'>
+        <div
+          className='basis-full lg:basis-[45%] order-1 lg:order-3 lg:max-h-[400px]'
+          data-aos='fade-up'
+          data-aos-delay='200'>
           <img src='/images/features-3.jpg' className='w-full h-full object-cover' alt='more feature image' />
         </div>
       </div>
