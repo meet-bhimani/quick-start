@@ -13,6 +13,9 @@ import Footer from "./pages/sections/Footer";
 import MoreFeatures from "./pages/sections/MoreFeatures";
 import Pricing from "./pages/sections/Pricing";
 import Services from "./pages/sections/Services";
+import Testimonials from "./pages/sections/Testimonials";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function App() {
   return (
@@ -28,6 +31,7 @@ function App() {
       <MoreFeatures />
       <Pricing />
       <Faqs />
+      <Testimonials />
       <Contact />
       <ScrollToTopButton />
       <Footer />
