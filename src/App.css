@@ -22,3 +22,47 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  overflow-x: hidden;
+}
+
+.slick-list {
+  overflow: visible !important;
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  opacity: 0.3;
+}
+
+.slick-active.slick-current .testimonial-card {
+  opacity: 1;
+}
+
+.slick-slide[aria-hidden="true"] {
+  opacity: 0;
+}
+
+.slick-dots {
+  top: 115%;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #388da8 !important;
+}
+
+.slick-dots li button::before {
+  font-size: 14px !important;
+}
+
+@media (min-width: 1200px) {
+  .testimonial-card {
+    width: 85%;
+  }
+
+  .slick-active.slick-current .testimonial-card {
+    transform: scale(1.12);
+    opacity: 1;
+  }
+}
