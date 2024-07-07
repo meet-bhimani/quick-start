@@ -10,7 +10,9 @@ const CompaniesImagesPath: string[] = [
 function Companies() {
   return (
     <section id='companies-section' className='my-14 px-0 sm:px-20'>
-      <div className='grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'>
+      <div
+        className='grid place-items-center grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8'
+        data-aos='fade-up'>
         {CompaniesImagesPath.map((imagePath, i) => {
           return (
             <img

@@ -80,7 +80,10 @@ function Features() {
       />
       <div className='flex flex-col lg:flex-row justify-between mt-14 gap-0 lg:gap-8'>
         {/* features */}
-        <div className='basis-1/2 flex flex-col items-center justify-around gap-4 py-0 lg:py-16'>
+        <ul
+          className='basis-1/2 flex flex-col items-center justify-around gap-4 py-0 lg:py-16'
+          data-aos='fade-up'
+          data-aos-delay='100'>
           {FeaturesData.map((feature) => {
             return (
               <GenerateFeatureCard
@@ -94,10 +97,10 @@ function Features() {
               />
             );
           })}
-        </div>
+        </ul>
 
         {/* images  */}
-        <div className='basis-1/2'>
+        <div className='basis-1/2' data-aos='fade-up' data-aos-delay='200'>
           <img
             src={`/images/tabs-${activeFeatureId}.jpg`}
             alt='tabs'

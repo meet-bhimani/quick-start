@@ -89,7 +89,11 @@ const FeaturesData: PricingCardFeature[] = [
 
 function GeneratePricingCard({ id, title, description, price, buttonText, creditCardInfo, isPopular }: PricingCard) {
   return (
-    <div key={id} className='relative pricing-card basis-full lg:basis-1/3 bg-secondary bg-opacity-15 rounded-lg p-10'>
+    <div
+      key={id}
+      className='relative pricing-card basis-full lg:basis-1/3 bg-secondary bg-opacity-15 rounded-lg p-10'
+      data-aos='zoom-in'
+      data-aos-delay={id * 100}>
       {isPopular && (
         <span className='bg-primary rounded-md text-white text-sm font-medium px-4 pt-1 pb-[6px] absolute right-4 top-4'>
           Popular

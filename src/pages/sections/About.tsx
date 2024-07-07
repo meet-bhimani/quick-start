@@ -23,7 +23,7 @@ function About() {
       <section
         id='about-section'
         className='py-14 px-4 min-h-[600px] sm:px-10 md:px-32 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-6'>
-        <div>
+        <div data-aos='fade-up' data-aos-delay='100'>
           <h2 className='uppercase text-default'>Who we are</h2>
           <h1 className='font-nunito mt-4 text-3xl text-heading font-bold tracking-wider leading-10'>
             Unleashing Potential with Creative Strategy
@@ -41,7 +41,10 @@ function About() {
             Read More <GoArrowRight />
           </Button>
         </div>
-        <div className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-6 lg:max-h-[400px]'>
+        <div
+          className='grid grid-cols-1 lg:grid-cols-2 place-items-center gap-8 lg:gap-6 lg:max-h-[400px]'
+          data-aos='fade-up'
+          data-aos-delay='200'>
           <div>
             <img src='/images/about-company-1.jpg' alt='about image 1' className='rounded-md h-full' />
           </div>

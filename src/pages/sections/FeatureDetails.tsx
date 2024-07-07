@@ -50,10 +50,16 @@ const GenerateFeatureDetailsCard = ({
 }: FeatureDetails & { isReverse?: boolean }) => {
   return (
     <div className='w-full md:w-[85%] lg:w-full mx-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center my-14 gap-8 lg:gap-0'>
-      <div className={cn("basis-1/2", isReverse && "lg:order-2")}>
+      <div
+        className={cn("basis-1/2", isReverse && "lg:order-2")}
+        data-aos='fade-up'
+        data-aos-delay={isReverse ? "200" : "100"}>
         <img src={imageUrl} alt={title} className='rounded-lg w-full lg:w-[min(100%,630px)]' />
       </div>
-      <div className='w-full basis-1/2 lg:basis-[40%] order-1 bg-secondary bg-opacity-20 py-6 px-9 rounded-lg'>
+      <div
+        className='w-full basis-1/2 lg:basis-[40%] order-1 bg-secondary bg-opacity-20 py-6 px-9 rounded-lg'
+        data-aos='fade-up'
+        data-aos-delay={isReverse ? "100" : "200"}>
         <div>
           <h1 className='text-heading font-nunito text-[26px] font-bold'>{title}</h1>
           <p className='text-default my-4'>{description}</p>
