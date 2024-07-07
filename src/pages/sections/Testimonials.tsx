@@ -1,5 +1,7 @@
 import SectionTitle from "../../components/common/SectionTitle";
 import Slider from "react-slick";
+import "@smastrom/react-rating/style.css";
+import { Rating, Star } from "@smastrom/react-rating";
 
 type Testimonial = {
   id: number;
@@ -63,7 +65,12 @@ const GenerateTestimonialsCard = ({ id, name, avatar, description, designation, 
     <div
       key={id}
       className='testimonial-card shadow-custom min-h-[450px] w-full mx-auto bg-white py-6 px-8 flex flex-col items-center justify-center text-center'>
-      <div>{starCount}</div>
+      <Rating
+        style={{ width: 100 }}
+        itemStyles={{ itemShapes: Star, activeFillColor: "#ffb700", inactiveFillColor: "#fbf1a9" }}
+        value={starCount}
+        readOnly
+      />
       <p className='italic text-heading my-4'>{description}</p>
       <img src={avatar} alt={name} className='rounded-full w-24 mt-14 xl:mt-2' />
       <h2 className='font-nunito text-heading font-bold mt-4'>{name}</h2>

@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
+    "@smastrom/react-rating": "^1.5.0",
     "clsx": "^2.1.1",
     "concurrently": "^8.2.2",
     "json-server": "^1.0.0-beta.1",
