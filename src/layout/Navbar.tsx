@@ -53,8 +53,9 @@ function Navbar() {
   };
 
   return (
-    <nav id='navbar'>
+    <nav>
       <div
+        id='navbar'
         className={cn(
           "w-screen flex items-center justify-between py-8 px-4 sm:px-[3rem] xl:px-[5rem] fixed top-0 z-50 duration-500",
           isScrolled && "bg-white shadow-[0_0_30px_rgba(0,0,0,0.10)]"

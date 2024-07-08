@@ -4,7 +4,7 @@ function useScroll() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const handleScroll = () => {
-    const navElement = document.querySelector("#navbar") as HTMLElement;
+    const navElement = document.querySelector("#navbar") as HTMLDivElement;
     if (navElement) {
       const navHeight = navElement.offsetHeight;
       setIsScrolled(window.scrollY > navHeight);
