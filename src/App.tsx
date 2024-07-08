@@ -19,6 +19,7 @@ import Services from "./pages/sections/Services";
 import Testimonials from "./pages/sections/Testimonials";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   useEffect(() => {
@@ -31,7 +32,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <BrowserRouter>
       <Navbar />
       <LandingPage />
       <FeaturedServices />
@@ -47,7 +48,7 @@ function App() {
       <Contact />
       <ScrollToTopButton />
       <Footer />
-    </>
+    </BrowserRouter>
   );
 }
 
