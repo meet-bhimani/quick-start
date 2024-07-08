@@ -105,6 +105,9 @@ function Features() {
             src={`/images/tabs-${activeFeatureId}.jpg`}
             alt='tabs'
             className='mx-auto w-full sm:w-[85%] lg:w-[min(100%,650px)] rounded-lg'
+            data-aos='fade'
+            data-aos-delay='50'
+            key={activeFeatureId}
           />
         </div>
       </div>

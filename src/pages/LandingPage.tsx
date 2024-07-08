@@ -1,9 +1,52 @@
 import { FaRegCirclePlay } from "react-icons/fa6";
 import Button from "../components/common/Button";
+import { BsX } from "react-icons/bs";
+import { useState } from "react";
+import { ClipLoader } from "react-spinners";
 
 function LandingPage() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleWatchVideoClick = () => {
+    document.body.style.overflowY = "hidden";
+    setIsLoading(true);
+    setIsVideoOpen(true);
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  };
+
+  const handleCloseVideoClick = () => {
+    document.body.style.overflowY = "auto";
+    setIsVideoOpen(false);
+  };
+
   return (
     <section id='hero-section' className='relative min-h-svh overflow-hidden pt-10 px-2'>
+      {isVideoOpen && (
+        <>
+          <BsX
+            className='absolute top-3 right-3 text-white text-5xl z-[51] cursor-pointer'
+            onClick={handleCloseVideoClick}
+          />
+          <div className='fixed w-svw h-svh top-0 left-0 z-50 grid place-items-center bg-[rgba(0,0,0,0.8)]'>
+            {isLoading ? (
+              <ClipLoader size={30} color='white' className='text-white animate-spin' />
+            ) : (
+              <iframe
+                width='70%'
+                height='70%'
+                src='https://www.youtube.com/embed/LXb3EKWsInQ?si=VBXXlssr_2CJPBXI'
+                title='YouTube video player'
+                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
+                referrerPolicy='strict-origin-when-cross-origin'
+                allowFullScreen></iframe>
+            )}
+          </div>
+        </>
+      )}
       <div>
         <img src='/images/hero-bg-light.webp' alt='hero-bg-light' className='w-svw absolute top-0 left-0 h-svh -z-10' />
         <div className='absolute top-0 left-0 w-full h-full bg-white opacity-85 -z-10'></div>
@@ -23,9 +66,10 @@ function LandingPage() {
             rounded
             variant='primary'
             size='md'
-            className=' bg-transparent text-black flex items-center justify-center gap-2'>
+            className=' bg-transparent text-black flex items-center justify-center gap-2'
+            onClick={handleWatchVideoClick}>
             <FaRegCirclePlay className='text-3xl text-primary' />
-            <span className='font-bold hover:text-primary duration-300'>Watch Video </span>
+            <span className='font-bold hover:text-primary duration-300'>Watch Video</span>
           </Button>
         </div>
       </div>
